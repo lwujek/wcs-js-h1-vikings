@@ -1,14 +1,19 @@
+.header {
+    background: url('https://i.skyrock.net/0705/68240705/pics/3272724006_1_8_zYKCMl0F.jpg');
+    height: 400px;
+}
+
 .bateau {
     height: 200px;
     width: 300px;
 }
 
 .title {
-    color: fuchsia
+    color: fuchsia;
+    font-size: 3em;
 }
 
 .parag {
-    color: fuchsia
+    font-size: 1.5em;
+    color: fuchsia;
 }
-
-

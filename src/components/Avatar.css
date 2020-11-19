@@ -6,12 +6,6 @@
     align-items: center;
 }
 
-.Align {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 figure {
     background-repeat: no-repeat;
     padding-top: 15px;

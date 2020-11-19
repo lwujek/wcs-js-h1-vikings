@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+import "./Filter.css"
 import { Link } from "react-router-dom";
 
 class Filter extends React.Component {
@@ -13,6 +14,7 @@ class Filter extends React.Component {
     this.changeIWant = this.changeIWant.bind(this);
     this.changePort = this.changePort.bind(this);
   }
+
 
   changeIAm(e) {
     this.setState({

@@ -40,7 +40,7 @@ class Profile extends React.Component {
       <div className="Avatar">
         <Navbar/>
         <div className="BackgroundProfile">
-        <h1 className="h1Profile">Mon profil !</h1>
+        <h1 className="h1Profile">Mon profil</h1>
         <p className ="paraProfile">
           Viking, Viqueen, édite ton profil ! Cela te donnera de meilleures chances de rencontrer ton ou ta felag !
         </p>
