@@ -6,7 +6,7 @@ const DataBase = [
         genre : "femme",
         préférences : "homme",
         description : "J'aime les soirées peau de bête avec un bon feu de bois",
-        port : "Dorestad",
+        port : "Dorestad"
     }
     {
         id : 2,
@@ -15,7 +15,7 @@ const DataBase = [
         genre : "femme",
         préférences : "femme",
         description : "Pour échapper à un mariage arrangé, je suis devenue pirate et commande un navire composé de femmes. Je cherche mon âme soeur.",
-        port : "Kattegat",
+        port : "Kattegat"
     }
     {
         id : 3,
@@ -24,7 +24,7 @@ const DataBase = [
         genre : "femme",
         préférences : "homme",
         description : "Si tu as soif, je te ferai boire dans ma corne d'abondance",
-        port : "Stapula",
+        port : "Stapula"
     }
     {
     
@@ -34,7 +34,7 @@ const DataBase = [
         genre : "homme",
         préférences : "homme",
         description : "J'ai un coeur sous mon armure",
-        port : "Stapula",
+        port : "Stapula"
     }
     {
         id : 5,
@@ -43,7 +43,7 @@ const DataBase = [
         genre : "homme",
         préférences : "femme",
         description : "Trop de temps passé sur mon drakar...",
-        port : "Dorestad",
+        port : "Dorestad"
     }
     {
     
@@ -53,7 +53,7 @@ const DataBase = [
         genre : "homme",
         préférences : "femme",
         description : "Trop de temps passé sur mon drakar...",
-        port : "Kattegat",
+        port : "Kattegat"
     }
     { 
     
@@ -63,7 +63,7 @@ const DataBase = [
         genre : "homme",
         préférences : "femme",
         description : "Je cherche une belle sirène.",
-        port : "Kattegat",
+        port : "Kattegat"
     }
     
     {
@@ -74,7 +74,7 @@ const DataBase = [
         genre : "homme",
         préférences : "homme",
         description : "J'aime les tresses et la fourure",
-        port : "Stapula",
+        port : "Stapula"
     
     }
     {
@@ -84,7 +84,7 @@ const DataBase = [
         genre : "femme",
         préférences : "homme",
         description : "Tu as des muscles ? Moi aussi",
-        port : "Stapula",
+        port : "Stapula"
     
     }
     {
@@ -94,7 +94,7 @@ const DataBase = [
         genre : "femme",
         préférences : "femme",
         description : "super Nanna cherche super nana",
-        port : "Dorestad",
+        port : "Dorestad"
     }
     
     ]
