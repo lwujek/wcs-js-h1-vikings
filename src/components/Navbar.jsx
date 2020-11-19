@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import { GiVikingHelmet, GiVikingChurch } from "react-icons/gi";
 import { IconContext } from "react-icons";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 
 const Section = styled.section`
   width: 100vw;
@@ -25,7 +25,6 @@ export default class Navbar extends Component {
     return (
       <IconContext.Provider value={{ size: "6rem", color: "#000" }}>
         <Section>
-          <Link to="/" 
           <GiVikingChurch className="btn" />
           <GiVikingHelmet className="btn" />
         </Section>
