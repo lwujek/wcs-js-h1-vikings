@@ -23,13 +23,13 @@ const Section = styled.section`
 export default class Navbar extends Component {
   render() {
     return (
-      <IconContext.Provider value={{ size: "6rem", color: "#000" }}>
+      <IconContext.Provider value={{ size: "5rem", color: "#000" }}>
         <Section>
-        <Link to="/">
-          <GiVikingChurch className="btn" />
+          <Link to="/">
+            <GiVikingChurch className="btn" />
           </Link>
           <Link to="/profile">
-          <GiVikingHelmet className="btn" />
+            <GiVikingHelmet className="btn" />
           </Link>
         </Section>
       </IconContext.Provider>
