@@ -1,9 +1,11 @@
 import React from 'react';
+import "./Filter.css"
 
 class Filter extends React.Component {
     render() {
         return (
             <div>
+                <h2 className="title2">Que cherches-tu ?</h2>
                 <form>
                     <fieldset>
                         <legend>I am:</legend>

@@ -9,8 +9,10 @@ const Home = () => {
     return(
         <div className='home'>
             <Navbar />
+            <div className="column">
             <Header />
             <Filter />
+            </div>
         </div>
     )
 }

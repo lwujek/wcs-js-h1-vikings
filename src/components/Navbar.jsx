@@ -5,9 +5,9 @@ import { IconContext } from "react-icons";
 import { Link } from "react-router-dom";
 
 const Section = styled.section`
-  width: 100vw;
+  width: 100%;
   height: 6rem;
-  background :#c4c4c4;
+  background : linear-gradient(#e66465, #9198e5);
   display: flex;
   justify-content: space-between;
   align-items: center;
