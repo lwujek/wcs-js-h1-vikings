@@ -58,8 +58,9 @@ class Filter extends React.Component {
             <option value="Kattegat">Kattegat</option>
           </select>
         </div>
-
-        <button>Find Love</button>
+        <Link to="./ProfileTinder">
+          <button>ind Love</button>
+        </Link>
       </div>
     );
   }
