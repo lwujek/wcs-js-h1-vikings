@@ -6,13 +6,13 @@ import { Link } from "react-router-dom";
 
 const Section = styled.section`
   width: 100vw;
-  height: 10vh;
+  height: 6rem;
+  background :#c4c4c4;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   .btn {
-    width: 6rem;
     height: 90%;
     margin: 0 1rem;
   }
@@ -21,7 +21,7 @@ const Section = styled.section`
 export default class Navbar extends Component {
   render() {
     return (
-      <IconContext.Provider value={{ size: "5rem", color: "#fff" }}>
+      <IconContext.Provider value={{ size: "4rem", color: "#fff" }}>
         <Section>
           <Link to="/">
             <GiVikingChurch className="btn" />

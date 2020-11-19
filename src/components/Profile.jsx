@@ -8,10 +8,14 @@ class Profile extends React.Component {
     super(props);
     this.localStorage = window.localStorage;
     const nickNameOk = this.localStorage.getItem('newNickName');
+    const descriptionOK = this.localStorage.getItem('newDescription');
+
     this.state = {
       nickname: nickNameOk || '',
+      description: descriptionOK || '',
     };
     this.changeNickName = this.changeNickName.bind(this);
+    this.changeDescription = this.changeDescription.bind(this);
   }
 
   changeNickName(event) {
@@ -22,14 +26,29 @@ class Profile extends React.Component {
     });
   }
 
+  changeDescription(event) {
+    const newDescription = event.target.value;
+    this.localStorage.setItem('newDescription', newDescription);
+    this.setState({
+      description: newDescription,
+    });
+  }
+
   render() {
-    const { nickname } = this.state;
+    const { nickname, description } = this.state;
     return (
       <div className="Avatar">
         <Navbar/>
-        <h1>Bienvenue {nickname} !</h1>
+        <div className="BackgroundProfile">
+        <h1 className="h1Profile">Mon profil !</h1>
+        <p className ="paraProfile">
+          Viking, Viqueen, édite ton profil ! Cela te donnera de meilleures chances de rencontrer ton ou ta felag !
+        </p>
         <Avatar />
-        <div className="LabelNickname">
+        <h2> {nickname} </h2>
+    <p>{description}</p>
+        <div className="Form">
+        <label for='Nickname'>Ton pseudo :</label>
           <input
             type="text"
             id="nickname"
@@ -40,10 +59,17 @@ class Profile extends React.Component {
             autoComplete="off"
             onChange={this.changeNickName}
           ></input>
+          <label for='description'>Ta description :</label>
+          <textarea
+            type="text"
+            id="description"
+            name="description"
+            placeholder="Entre ta description"
+            autoComplete="off"
+            onChange={this.changeDescription}
+          ></textarea>
         </div>
-        <p>
-          Viking, Viqueen, édite ton profil pour avoir de meilleures chances de rencontrer ton ou ta "felag" !
-        </p>
+        </div>
       </div>
     );
   }
