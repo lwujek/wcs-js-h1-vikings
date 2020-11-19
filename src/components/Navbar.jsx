@@ -7,13 +7,11 @@ import { Link } from "react-router-dom";
 const Section = styled.section`
   width: 100vw;
   height: 10vh;
-  background: #c4c4c4;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   .btn {
-    background-image: 
     width: 6rem;
     height: 90%;
     margin: 0 1rem;
