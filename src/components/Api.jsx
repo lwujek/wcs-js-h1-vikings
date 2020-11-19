@@ -1,4 +1,4 @@
-export const characters = [
+export const dataBase = [
   {
     id: 1,
     name: "Ássfriđr",

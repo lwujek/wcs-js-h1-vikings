@@ -1,8 +1,11 @@
 import React from "react";
 import TinderCard from "react-tinder-card";
 import "./ProfileTinder.css";
+import { dataBase } from "./Api";
 
-function ProfileTinder({ characters }) {
+function ProfileTinder() {
+  const characters = dataBase;
+  console.log(characters);
   const swiped = (direction, nameToDelete) => {
     console.log("removing: " + nameToDelete);
   };
