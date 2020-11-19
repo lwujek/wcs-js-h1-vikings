@@ -21,7 +21,7 @@ const Section = styled.section`
 export default class Navbar extends Component {
   render() {
     return (
-      <IconContext.Provider value={{ size: "5rem", color: "#000" }}>
+      <IconContext.Provider value={{ size: "5rem", color: "#fff" }}>
         <Section>
           <Link to="/">
             <GiVikingChurch className="btn" />
