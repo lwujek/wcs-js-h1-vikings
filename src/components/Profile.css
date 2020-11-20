@@ -1,22 +1,28 @@
+.Profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .BackgroundProfile {
     background-color: white;
-    width: 50%;
 }
 
 .h1Profile {
     color: fuchsia;
-    font-size: 2em;
+    font-size: 3em;
 }
 
 .paraProfile {
     text-align: center;
+    font-size: 1.5em;
     color: fuchsia;
     padding-left: 20px;
     padding-right: 20px;
 }
 
 textarea {
-    width: 300px;
+    width: 400px;
     height: 200px;
     resize: none;
 }

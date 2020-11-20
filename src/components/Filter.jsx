@@ -1,5 +1,6 @@
 import React from "react";
-
+import "./Filter.css";
+import { Link } from "react-router-dom";
 class Filter extends React.Component {
   constructor(props) {
     super(props);
@@ -9,48 +10,64 @@ class Filter extends React.Component {
       port: "",
     };
     this.changeIAm = this.changeIAm.bind(this);
-    this.changeIWant = this.changeIWant.bind(this);
-    this.changePort = this.changePort.bind(this);
+    this.filterIwant = this.filterIwant.bind(this);
+    this.filterPort = this.filterPort.bind(this);
   }
 
-  changeIAm(e) {
+  changeIAm(iam) {
+    const { iAmChange } = this.props;
     this.setState({
-      iAm: e.target.value,
+      iAm: iam,
     });
+    iAmChange(iam);
   }
-  changeIWant(e) {
+
+  filterIwant(iwant) {
+    const { homeIwant } = this.props;
     this.setState({
-      iWant: e.target.value,
+      iWant: iwant,
     });
+    homeIwant(iwant);
   }
-  changePort(e) {
+
+  filterPort(port) {
+    const { homePort } = this.props;
     this.setState({
-      port: e.target.value,
+      port: port,
+    });
+    homePort(port);
+  }
+
+  reset() {
+    this.setState({
+      iAm: "",
+      iWant: "",
+      port: "",
     });
   }
 
   render() {
-    console.log(this.state.iAm);
-    console.log(this.state.iWant);
-    console.log(this.state.port);
     return (
-      <div>
+      <section>
+        <div>
+          <button onClick={this.reset}>reset</button>
+        </div>
         <div className="i-am" onChange={this.changeIAm}>
-          <legend>I am:</legend>
-          <label for="Femme">Femme</label>
-          <input name="Iam" type="radio" value="Femme"></input>
-          <label for="Homme">Homme</label>
-          <input name="Iam" type="radio" value="Homme"></input>
+          <legend>I am :</legend>
+          <label htmlFor="femme">Femme</label>
+          <input name="Iam" type="radio" value="femme"></input>
+          <label htmlFor="homme">Homme</label>
+          <input name="Iam" type="radio" value="homme"></input>
         </div>
-        <div className="i-want" onChange={this.changeIWant}>
-          <legend>I want:</legend>
-          <label for="Femme">Femme</label>
-          <input name="Iwant" type="radio" idvalue="Femme"></input>
-          <label for="Homme">Homme</label>
-          <input name="Iwant" type="radio" value="Homme"></input>
+        <div className="i-want" onChange={this.filterIwant}>
+          <legend>I want :</legend>
+          <label htmlFor="femme">Femme</label>
+          <input name="Iwant" type="radio" value="femme"></input>
+          <label htmlFor="homme">Homme</label>
+          <input name="Iwant" type="radio" value="homme"></input>
         </div>
-        <div className="port" onChange={this.changePort}>
-          <label for="ports">Choose port:</label>
+        <div className="port" onChange={this.filterPort}>
+          <label htmlFor="ports">Choose port :</label>
           <select name="port" id="ports">
             <option value="">...</option>
             <option value="Stapula">Stapula</option>
@@ -61,7 +78,7 @@ class Filter extends React.Component {
         <Link to="./ProfileTinder">
           <button>ind Love</button>
         </Link>
-      </div>
+      </section>
     );
   }
 }
