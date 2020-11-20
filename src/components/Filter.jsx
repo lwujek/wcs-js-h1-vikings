@@ -1,7 +1,6 @@
-import React from 'react';
-import "./Filter.css"
+import React from "react";
+import "./Filter.css";
 import { Link } from "react-router-dom";
-
 class Filter extends React.Component {
   constructor(props) {
     super(props);
@@ -15,12 +14,14 @@ class Filter extends React.Component {
     this.changePort = this.changePort.bind(this);
   }
 
-
-  changeIAm(e) {
+  changeIAm(iAm) {
+    const { iAmChange } = this.props;
     this.setState({
-      iAm: e.target.value,
+      iAm: iAm,
     });
+    iAmChange(iAm);
   }
+
   changeIWant(e) {
     this.setState({
       iWant: e.target.value,
@@ -33,27 +34,24 @@ class Filter extends React.Component {
   }
 
   render() {
-    console.log(this.state.iAm);
-    console.log(this.state.iWant);
-    console.log(this.state.port);
     return (
       <div>
         <div className="i-am" onChange={this.changeIAm}>
-          <legend>I am:</legend>
-          <label for="Femme">Femme</label>
-          <input name="Iam" type="radio" value="Femme"></input>
-          <label for="Homme">Homme</label>
-          <input name="Iam" type="radio" value="Homme"></input>
+          <legend>I am :</legend>
+          <label htmlFor="femme">Femme</label>
+          <input name="Iam" type="radio" value="femme"></input>
+          <label htmlFor="homme">Homme</label>
+          <input name="Iam" type="radio" value="homme"></input>
         </div>
         <div className="i-want" onChange={this.changeIWant}>
-          <legend>I want:</legend>
-          <label for="Femme">Femme</label>
-          <input name="Iwant" type="radio" idvalue="Femme"></input>
-          <label for="Homme">Homme</label>
-          <input name="Iwant" type="radio" value="Homme"></input>
+          <legend>I want :</legend>
+          <label htmlFor="femme">Femme</label>
+          <input name="Iwant" type="radio" value="femme"></input>
+          <label htmlFor="homme">Homme</label>
+          <input name="Iwant" type="radio" value="homme"></input>
         </div>
         <div className="port" onChange={this.changePort}>
-          <label for="ports">Choose port:</label>
+          <label htmlFor="ports">Choose port :</label>
           <select name="port" id="ports">
             <option value="">...</option>
             <option value="Stapula">Stapula</option>

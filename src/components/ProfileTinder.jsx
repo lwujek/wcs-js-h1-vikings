@@ -2,10 +2,11 @@ import React from "react";
 import TinderCard from "react-tinder-card";
 import "./ProfileTinder.css";
 import { dataBase } from "./Api";
+import Navbar from "./Navbar";
 
 function ProfileTinder() {
   const characters = dataBase;
-  console.log(characters);
+  // console.log(characters);
   const swiped = (direction, nameToDelete) => {
     console.log("removing: " + nameToDelete);
   };
@@ -16,6 +17,7 @@ function ProfileTinder() {
 
   return (
     <div>
+      <Navbar />
       <h1>Horned Félag</h1>
       <div className="cardContainer">
         {characters.map((character) => (
