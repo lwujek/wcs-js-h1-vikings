@@ -10,28 +10,47 @@ class App extends Component {
     super(props);
     this.state = {
       iAm: "",
+      iWant: "",
+      port: "",
     };
     this.changedIAm = this.changedIAm.bind(this);
+    this.appIwant = this.appIwant.bind(this);
+    this.appPort = this.appPort.bind(this);
   }
 
-  changedIAm(iAm) {
+  changedIAm(iam) {
     this.setState({
-      iAm: iAm.target.value,
+      iAm: iam.target.value,
     });
   }
 
+  appIwant(iwant) {
+    this.setState({
+      iWant: iwant.target.value,
+    });
+  }
+
+  appPort(port) {
+    this.setState({
+      port: port.target.value,
+    })
+  }
+
   render() {
-    console.log(this.state.iAm);
     return (
       <div className="App">
         <Router>
           <Switch>
             <Route exact path="/">
-              <Home changedIAm={this.changedIAm} />
+              <Home
+                changedIAm={this.changedIAm}
+                appIwant={this.appIwant}
+                appPort={this.appPort}
+              />
             </Route>
             <Route exact path="/profile" component={Profile} />
             <Route exact path="/ProfileTinder">
-              <ProfileTinder iam={this.state.iAm} />
+              <ProfileTinder iam={this.state.iAm} iwant={this.state.iWant} port={this.state.port}/>
             </Route>
           </Switch>
         </Router>

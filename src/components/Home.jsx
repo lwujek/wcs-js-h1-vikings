@@ -8,11 +8,23 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.iAmChange = this.iAmChange.bind(this);
+    this.homeIwant = this.homeIwant.bind(this);
+    this.homePort = this.homePort.bind(this);
   }
 
-  iAmChange(iAm) {
+  iAmChange(iam) {
     const { changedIAm } = this.props;
-    changedIAm(iAm);
+    changedIAm(iam);
+  }
+
+  homeIwant(iwant) {
+    const { appIwant } = this.props;
+    appIwant(iwant);
+  }
+
+  homePort(port) {
+    const { appPort } = this.props;
+    appPort(port);
   }
 
   render() {
@@ -21,7 +33,11 @@ class Home extends Component {
         <Navbar />
         <div className="column">
           <Header />
-          <Filter iAmChange={this.iAmChange} />
+          <Filter
+            iAmChange={this.iAmChange}
+            homeIwant={this.homeIwant}
+            homePort={this.homePort}
+          />
         </div>
       </div>
     );
