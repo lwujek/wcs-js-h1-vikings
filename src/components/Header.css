@@ -9,11 +9,13 @@
 }
 
 .title {
-    color: fuchsia;
+    color: #eeee;
+    text-shadow: rgb(155, 155, 155) 0.1em 0.1em 0.2em;
     font-size: 3em;
 }
 
 .parag {
     font-size: 1.5em;
-    color: fuchsia;
+    color: #eeee;
+    text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em;
 }

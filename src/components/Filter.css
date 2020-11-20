@@ -1,8 +1,25 @@
-.Filter {
-    height: 1500px;
-}
-
-.title2 {
-    color: fuchsia;
-    font-size: 2em;
-}
+            .Filter {
+                height: 1500px;
+            }
+            
+            .title2 {
+                color: fuchsia;
+                font-size: 2em;
+            }
+            
+            input {
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            
+            label {
+                font-weight: 2;
+            }
+            
+            button {
+                height: 30px;
+                background-color: fuchsia;
+                border-radius: 5px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }

@@ -41,12 +41,14 @@ class Profile extends React.Component {
         <Navbar/>
         <div className="BackgroundProfile">
         <h1 className="h1Profile">Mon profil</h1>
-        <p className ="paraProfile">
+        <Avatar />
+
+        <p className="paraProfile"> {nickname} </p>
+    <p className="paraProfile">{description}</p>
+    <hr className="separtor"/>
+    <p className="paraProfile2">
           Viking, Viqueen, édite ton profil ! Cela te donnera de meilleures chances de rencontrer ton ou ta felag !
         </p>
-        <Avatar />
-        <h2> {nickname} </h2>
-    <p>{description}</p>
         <div className="Form">
         <label for='Nickname'>Ton pseudo :</label>
           <input

@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Section = styled.section`
   width: 100%;
   height: 6rem;
-  background : linear-gradient(#e66465, #9198e5);
+  background : linear-gradient(#9198e5, #e66465);
   display: flex;
   justify-content: space-between;
   align-items: center;
