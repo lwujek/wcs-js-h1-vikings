@@ -22,10 +22,10 @@ class ProfileTinder extends Component {
     const port = this.props.port;
 
     return (
-      <div>
-        <Navbar />
-        <h1>Horned Félag</h1>
+      <div className="containerTinder">
+      <Navbar />
         <div className="cardContainer">
+        <h1>Swipe à droite si tu es intéressé.e, sinon swipe à gauche</h1>
           {characters
             .filter((e) => (iam ? iam === e.preferences : true))
             .filter((e) => (iwant ? iwant === e.genre : true))
@@ -41,7 +41,7 @@ class ProfileTinder extends Component {
                   style={{ backgroundImage: "url(" + character.photo + ")" }}
                   className="card"
                 >
-                  <div className="descriptions">
+             <div className="descriptions">
                     <h2>{character.name}</h2>
                     <h3>{character.description}</h3>
                   </div>
@@ -49,7 +49,9 @@ class ProfileTinder extends Component {
               </TinderCard>
             ))}
         </div>
-      </div>
+        </div>
+        
+      
     );
   }
 }

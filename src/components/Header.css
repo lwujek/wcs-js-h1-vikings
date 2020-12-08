@@ -1,19 +1,28 @@
 .header {
     background: url('https://i.skyrock.net/0705/68240705/pics/3272724006_1_8_zYKCMl0F.jpg');
-    height: 400px;
-}
-
-.bateau {
-    height: 200px;
-    width: 300px;
+    height: 380px;
+    width: 100%;
 }
 
 .title {
-    color: fuchsia;
+    color: #eeee;
+    text-shadow: rgb(155, 155, 155) 0.1em 0.1em 0.2em;
     font-size: 3em;
+}
+
+.paragbox {
+    background-color: rgba(69, 69, 70, 0.5);
+    width: 600px;
+    margin-top: 60px;
+}
+
+.headerCenter {
+    display: flex;
+    justify-content: center;
 }
 
 .parag {
     font-size: 1.5em;
-    color: fuchsia;
+    color: #eeee;
+    text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em;
 }

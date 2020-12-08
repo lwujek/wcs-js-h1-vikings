@@ -18,7 +18,7 @@ export const dataBase = [
     genre: "femme",
     preferences: "femme",
     description:
-      "Pour échapper à un mariage arrangé, je suis devenue pirate et commande un navire composé de femmes. Je cherche mon âme soeur.",
+      "Je commande un navire composé de femmes pirates. Le reste du temps je cherche mon âme soeur.",
     port: "Kattegat",
   },
 
@@ -51,7 +51,7 @@ export const dataBase = [
       "https://p0.pikist.com/photos/600/608/viking-man-her-tough-ragnar.jpg",
     genre: "homme",
     preferences: "femme",
-    description: "Trop de temps passé sur mon drakar...",
+    description: "Solo j'danse le slow sur ta plage. J'm'enroule dans les flots. Solo j'fais naufrage",
     port: "Dorestad",
   },
 
@@ -83,7 +83,7 @@ export const dataBase = [
       "https://cdn.shopify.com/s/files/1/2795/4706/files/Coiffures_a_moitie_vikings_large.jpg?v=1588245410",
     genre: "homme",
     preferences: "homme",
-    description: "J'aime les tresses et la fourure",
+    description: "J'aime les tresses et la fourrure",
     port: "Stapula",
   },
 
@@ -109,3 +109,4 @@ export const dataBase = [
     port: "Dorestad",
   },
 ];
+

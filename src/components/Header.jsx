@@ -1,22 +1,20 @@
 import React from 'react';
-import boat from './images/boat.png';
 import './Header.css';
-
 
 
 
 const Header = () => {
     return (
         <div className='header'>
-            <h1 className='title'>Find your Viqueen or Viking</h1>
-
-            <div>
-                <p className='parag'>Entre deux pillages la solitude se faire vite ressentir sur ton drakar. A partir de maintenant trouve vite l'amour sur notre application dédiée aux rencontres à cornes.</p>
+            <h1 className='title'>Trouve ta Viqueen ou ton Viking</h1>
+            <div className="headerCenter">
+            <div className="paragbox">
+                <p className='parag'>Ta ou ton felagi* à cornes t'attend à la prochaine escale.</p>
+            </div>
             </div>
         </div>
     )
 }
 
 export default Header;
-
 

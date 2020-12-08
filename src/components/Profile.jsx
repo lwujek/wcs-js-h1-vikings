@@ -37,16 +37,18 @@ class Profile extends React.Component {
   render() {
     const { nickname, description } = this.state;
     return (
-      <div className="Avatar">
+      <div className="Profile">
         <Navbar/>
         <div className="BackgroundProfile">
         <h1 className="h1Profile">Mon profil</h1>
-        <p className ="paraProfile">
-          Viking, Viqueen, édite ton profil ! Cela te donnera de meilleures chances de rencontrer ton ou ta felag !
-        </p>
         <Avatar />
-        <h2> {nickname} </h2>
-    <p>{description}</p>
+
+        <p className="paraProfile"> {nickname} </p>
+    <p className="paraProfile">{description}</p>
+    <hr className="separtor"/>
+    <p className="paraProfile2">
+          Viking, Viqueen, édite ton profil entre deux pillages ! Cela te donnera de meilleures chances de rencontrer ton ou ta felagi !
+        </p>
         <div className="Form">
         <label for='Nickname'>Ton pseudo :</label>
           <input
@@ -76,5 +78,4 @@ class Profile extends React.Component {
 }
 
 export default Profile;
-
 

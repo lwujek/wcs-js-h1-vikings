@@ -2,14 +2,13 @@ import React, { Component } from 'react';
 import "./Avatar.css";
 
 
-
 class Avatar extends Component {
   constructor(props) {
     super(props);
     this.localStorage = window.localStorage;
     const avatar = this.localStorage.getItem('Avatar');
     this.state = {
-      picture: avatar || "https://randomuser.me/api/portraits/men/75.jpg",
+      picture: avatar || "https://cdn0.iconfinder.com/data/icons/viking-7/64/Viking-soldier-boss-man-avatar-warrior-512.png",
     };
   }
 
@@ -34,5 +33,4 @@ class Avatar extends Component {
 }
 
 export default Avatar;
-
 
